@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "npm run dev --workspace=ef-solutions-admin",
-    "build": "tsc --noEmit && npm run build --workspaces"
+    "build": "tsc --noEmit && npm run build --workspaces",
+    "test": "node --test ef-solutions-admin/tests/estadoPlataforma.test.mjs"
   },
   "devDependencies": {
     "@types/react": "19.3.0",
