@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import { RegistroForm } from './modules/Autenticacion/RegistroForm'
 
 /** Autor: Elmer Fuentes. Presenta la pantalla inicial de EF Personal. */
 function App() {
@@ -11,6 +12,9 @@ function App() {
         <i className="bi bi-wallet2" aria-hidden="true" />
         EF Personal
       </h1>
+      <div className="col-12 col-md-7 col-lg-5 mt-4">
+        <RegistroForm />
+      </div>
     </main>
   )
 }
