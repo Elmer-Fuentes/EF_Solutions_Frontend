@@ -1,0 +1,16 @@
+# Configuración privada
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.jks
+*.keystore
+local.properties
+
+# Dependencias y compilación
+node_modules/
+dist/
+build/
+.next/
+.gradle/
+coverage/
