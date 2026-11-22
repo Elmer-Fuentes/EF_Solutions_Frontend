@@ -8,7 +8,7 @@ Workspace npm independiente del backend, preparado para React + TypeScript + Boo
 - `ef-personal/`: producto de finanzas y organizacion personal, con futuro proyecto `android/` de Capacitor.
 - `ef-public-web/`: web comercial publica y publicaciones administrables.
 
-Cada aplicación tiene una pantalla inicial en React y un puerto local propio. Los módulos de negocio y el consumo de la API se incorporarán en sus historias correspondientes.
+Cada aplicación tiene una pantalla inicial en React y un puerto local propio. Admin puede consultar el estado de la API de desarrollo.
 
 ## Desarrollo local
 
@@ -27,3 +27,5 @@ Abre una terminal por aplicación y ejecuta el comando correspondiente desde `Fr
 | Web Pública | `npm.cmd run dev --workspace=ef-public-web` | http://127.0.0.1:5175 |
 
 Para comprobar TypeScript y compilar las tres apps, usa `npm.cmd run build`. Para consultar vulnerabilidades conocidas del lockfile, usa `npm.cmd audit`.
+
+Con la API en el puerto 5257, abre Admin, selecciona **Estado de la API** y pulsa **Consultar estado**. Vite reenvía la ruta al backend durante el desarrollo.
