@@ -29,3 +29,5 @@ Abre una terminal por aplicación y ejecuta el comando correspondiente desde `Fr
 Para comprobar TypeScript y compilar las tres apps, usa `npm.cmd run build`. Para consultar vulnerabilidades conocidas del lockfile, usa `npm.cmd audit`.
 
 Con la API en el puerto 5257, abre Admin, selecciona **Estado de la API** y pulsa **Consultar estado**. Vite reenvía la ruta al backend durante el desarrollo.
+
+En **EF Personal**, completa **Crea tu cuenta** para registrar tu identidad y tu espacio en DEV. Usa el Backend de la rama `feature/s02-identidad-local` con los scripts de registro aplicados. Si arrancas esa API en otro puerto, define `EF_PERSONAL_DEV_API` con su URL local antes de ejecutar Vite.
