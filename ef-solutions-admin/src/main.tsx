@@ -2,15 +2,21 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import { EstadoApi } from './components/Plataforma/EstadoApi'
 
 /** Autor: Elmer Fuentes. Presenta la pantalla inicial de EF Solutions Admin. */
 function App() {
   return (
     <main className="container py-5">
-      <h1 className="d-flex align-items-center gap-3">
+      <h1 id="inicio" className="d-flex align-items-center gap-3">
         <i className="bi bi-grid" aria-hidden="true" />
         EF Solutions Admin
       </h1>
+      <nav aria-label="Navegación de Admin">
+        <a className="me-3" href="#inicio">Inicio</a>
+        <a href="#estado-api">Estado de la API</a>
+      </nav>
+      <EstadoApi />
     </main>
   )
 }
