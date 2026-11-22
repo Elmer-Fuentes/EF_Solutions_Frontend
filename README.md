@@ -8,4 +8,22 @@ Workspace npm independiente del backend, preparado para React + TypeScript + Boo
 - `ef-personal/`: producto de finanzas y organizacion personal, con futuro proyecto `android/` de Capacitor.
 - `ef-public-web/`: web comercial publica y publicaciones administrables.
 
-**Estado:** carpetas y manifiestos iniciales; aun no hay una aplicacion React ejecutable. Codex creara codigo por modulo sin mezclar proyectos. Cada cliente consume la API de `Backend/EF.Solutions.Web` y nunca conecta directamente a MySQL ni almacena secretos.
+Cada aplicación tiene una pantalla inicial en React y un puerto local propio. Los módulos de negocio y el consumo de la API se incorporarán en sus historias correspondientes.
+
+## Desarrollo local
+
+Desde la raíz de `Frontend/`, instala las versiones del lockfile con los scripts de instalación deshabilitados:
+
+```powershell
+npm.cmd ci --ignore-scripts
+```
+
+Abre una terminal por aplicación y ejecuta el comando correspondiente desde `Frontend/`.
+
+| Aplicación | Comando | URL |
+| --- | --- | --- |
+| Admin | `npm.cmd run dev` | http://127.0.0.1:5173 |
+| EF Personal | `npm.cmd run dev --workspace=ef-personal` | http://127.0.0.1:5174 |
+| Web Pública | `npm.cmd run dev --workspace=ef-public-web` | http://127.0.0.1:5175 |
+
+Para comprobar TypeScript y compilar las tres apps, usa `npm.cmd run build`. Para consultar vulnerabilidades conocidas del lockfile, usa `npm.cmd audit`.
