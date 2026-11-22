@@ -2,5 +2,15 @@
   "name": "@ef-solutions/ef-personal",
   "version": "0.1.0",
   "private": true,
-  "description": "Estructura inicial; pendiente de implementar React"
+  "description": "EF Personal",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5174 --strictPort",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "bootstrap": "5.3.9",
+    "bootstrap-icons": "1.13.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  }
 }
