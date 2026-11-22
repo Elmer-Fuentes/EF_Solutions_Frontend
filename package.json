@@ -2,6 +2,16 @@
   "name": "ef-solutions-frontend",
   "private": true,
   "version": "0.1.0",
+  "scripts": {
+    "dev": "npm run dev --workspace=ef-solutions-admin",
+    "build": "tsc --noEmit && npm run build --workspaces"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.8"
+  },
   "workspaces": [
     "ef-solutions-admin",
     "ef-personal",
